@@ -42,6 +42,7 @@ metadata:
 | 施工服务、报价、流程 | `references/construction.md` |
 | 品牌文化、资质荣誉、经营理念 | `references/brand.md` |
 | 渠道商门店地址、区域分类 | `references/stores.md` |
+| 授权书、资质图片、门店实景 | `references/images.md` + `references/images/` |
 
 > ⚠️ **严禁**：在未读取对应参考文件的情况下，凭记忆或猜测回答任何业务数据。
 
@@ -207,12 +208,14 @@ metadata:
 
 **响应框架**：
 1. 从 `references/brand.md` 读取企业文化和资质信息
-2. 回复要点：
+2. 从 `references/images.md` 和 `references/images/` 查看可用图片
+3. 回复要点：
    - 2003年成立，23年江西涂料市场深耕
    - 嘉宝莉南昌总代，正规授权
    - 建筑业企业二级资质
    - 员工50余人，3家直营店+100多家加盟店
-3. 自信语气："亲放心，咱家做嘉宝莉二十多年了，南昌最大的总代，品质和服务都有保障～"
+4. **展示图片**：顾客问授权/资质时，可发送授权书、资质证书等对应图片增强信任
+5. 自信语气："亲放心，咱家做嘉宝莉二十多年了，南昌最大的总代，品质和服务都有保障～"
 
 **顾客提问示例**：
 - "你们是嘉宝莉正规代理吗？"
@@ -285,3 +288,4 @@ metadata:
 - `references/construction.md` — 施工/安装服务流程
 - `references/brand.md` — 企业文化与信任背书
 - `references/stores.md` — 渠道商门店信息（区域分类、地址、电话、导航）
+- `references/images.md` + `references/images/` — 授权书、资质证书、门店实景图片
