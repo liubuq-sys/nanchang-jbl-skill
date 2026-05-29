@@ -3,11 +3,11 @@
 # 南昌嘉宝莉（Nanchang Carpoly）Skill · Linux/macOS 安装
 # ============================================================
 # 用法：
-#   curl -sSL https://raw.githubusercontent.com/Liubuq-sys/nanchang-carpoly-skill/main/install.sh | bash
+#   curl -sSL https://raw.githubusercontent.com/Liubuq-sys/nanchang-jbl-skill/main/install.sh | bash
 # ============================================================
 
-REPO="https://github.com/Liubuq-sys/nanchang-carpoly-skill.git"
-SKILL_NAME="nanchang-carpoly"
+REPO="https://github.com/Liubuq-sys/nanchang-jbl-skill.git"
+SKILL_NAME="nanchang-jbl"
 SKILLS_DIR="${SKILLS_DIR:-$HOME/.openclaw/workspace/skills}"
 SKILL_PATH="$SKILLS_DIR/$SKILL_NAME"
 

@@ -14,18 +14,18 @@
 
 ```bash
 # Linux/macOS
-curl -sSL https://raw.githubusercontent.com/Liubuq-sys/nanchang-carpoly-skill/main/install.sh | bash
+curl -sSL https://raw.githubusercontent.com/Liubuq-sys/nanchang-jbl-skill/main/install.sh | bash
 ```
 
 ```powershell
 # Windows
-powershell -c "irm https://raw.githubusercontent.com/Liubuq-sys/nanchang-carpoly-skill/main/install.ps1 | iex"
+powershell -c "irm https://raw.githubusercontent.com/Liubuq-sys/nanchang-jbl-skill/main/install.ps1 | iex"
 ```
 
 ### 方式三：ClawHub 安装
 
 ```bash
-npx clawhub install nanchang-carpoly
+npx clawhub install nanchang-jbl
 ```
 
 ## 触发关键词
@@ -51,7 +51,7 @@ npx clawhub install nanchang-carpoly
 ## 文件结构
 
 ```
-nanchang-carpoly/
+nanchang-jbl/
 ├── SKILL.md                    # 核心技能文件
 ├── references/
 │   ├── business-info.md        # 门店基础信息

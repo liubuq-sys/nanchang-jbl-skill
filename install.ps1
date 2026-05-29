@@ -2,11 +2,11 @@
 # 南昌嘉宝莉（Nanchang Carpoly）Skill · Windows 安装
 # ============================================================
 # 用法：
-#   powershell -c "irm https://raw.githubusercontent.com/Liubuq-sys/nanchang-carpoly-skill/main/install.ps1 | iex"
+#   powershell -c "irm https://raw.githubusercontent.com/Liubuq-sys/nanchang-jbl-skill/main/install.ps1 | iex"
 # ============================================================
 
-$Repo = "https://github.com/Liubuq-sys/nanchang-carpoly-skill.git"
-$SkillName = "nanchang-carpoly"
+$Repo = "https://github.com/Liubuq-sys/nanchang-jbl-skill.git"
+$SkillName = "nanchang-jbl"
 $SkillsDir = if ($env:SKILLS_DIR) { $env:SKILLS_DIR } else { "$env:USERPROFILE\.openclaw\workspace\skills" }
 $SkillPath = Join-Path $SkillsDir $SkillName
 
@@ -22,7 +22,7 @@ if (Test-Path "$SkillPath\.git") {
     Write-Host "更新完成！" -ForegroundColor Green
 } else {
     Write-Host "正在下载 skill..." -ForegroundColor Cyan
-    $TmpDir = Join-Path $env:TEMP "nanchang-carpoly-$([System.Guid]::NewGuid())"
+    $TmpDir = Join-Path $env:TEMP "nanchang-jbl-$([System.Guid]::NewGuid())"
     git clone --depth 1 $Repo $TmpDir 2>$null
 
     if (Test-Path $SkillPath) {

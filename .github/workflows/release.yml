@@ -26,7 +26,7 @@ jobs:
       - name: Package skill
         run: |
           mkdir -p dist
-          zip -r dist/nanchang-carpoly-v${{ github.ref_name }}.skill \
+          zip -r dist/nanchang-jbl-v${{ github.ref_name }}.skill \
             SKILL.md \
             references/ \
             README.md \
@@ -41,5 +41,5 @@ jobs:
         with:
           name: "南昌嘉宝莉 Skill ${{ github.ref_name }}"
           body: "See CHANGELOG.md for details."
-          files: dist/nanchang-carpoly-v${{ github.ref_name }}.skill
+          files: dist/nanchang-jbl-v${{ github.ref_name }}.skill
           generate_release_notes: true

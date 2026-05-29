@@ -67,7 +67,7 @@ check("包含主推商品信息", "海藻泥" in svc or "嘉宝莉" in svc)
 print("\n[版本信息]")
 with open(os.path.join(SKILL_DIR, "version.json"), "r", encoding="utf-8") as f:
     ver = json.load(f)
-check("skill 名称正确", ver.get("skill") == "nanchang-carpoly")
+check("skill 名称正确", ver.get("skill") == "nanchang-jbl")
 check("version 字段存在", "version" in ver)
 check("data_version 字段存在", "data_version" in ver)
 
