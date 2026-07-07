@@ -37,10 +37,6 @@ else
     echo "安装完成！"
 fi
 
-# 配置 crontab 自动更新（每天 3:07）
-CRON_JOB="7 3 * * * cd $SKILL_PATH && git pull --ff-only origin main 2>/dev/null || git pull --ff-only origin master 2>/dev/null"
-(crontab -l 2>/dev/null | grep -v "$SKILL_NAME"; echo "$CRON_JOB") | crontab - 2>/dev/null && echo "自动更新已配置（每天 3:07）" || echo "提示：无法配置 crontab，可手动更新"
-
 echo ""
 echo "Skill 路径: $SKILL_PATH"
 echo "现在对 AI 说「南昌嘉宝莉」即可触发！"

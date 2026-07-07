@@ -38,16 +38,6 @@ if (Test-Path "$SkillPath\.git") {
     Write-Host "安装完成！" -ForegroundColor Green
 }
 
-# 配置计划任务（每天 3:07）
-$TaskName = "NanchangCarpolySkillUpdate"
-$Existing = Get-ScheduledTask -TaskName $TaskName -ErrorAction SilentlyContinue
-if (-not $Existing) {
-    $Action = New-ScheduledTaskAction -Execute "powershell" -Argument "-c `"cd '$SkillPath'; git pull --ff-only origin main 2>`$null; if (`$LASTEXITCODE -ne 0) { git pull --ff-only origin master 2>`$null }`"" -WorkingDirectory $SkillPath
-    $Trigger = New-ScheduledTaskTrigger -Daily -At 03:07
-    Register-ScheduledTask -TaskName $TaskName -Action $Action -Trigger $Trigger -Description "南昌嘉宝莉Skill自动更新" | Out-Null
-    Write-Host "自动更新已配置（每天 3:07）" -ForegroundColor Green
-}
-
 Write-Host ""
 Write-Host "Skill 路径: $SkillPath" -ForegroundColor White
 Write-Host "已就绪！现在对 AI 说「南昌嘉宝莉」即可触发。" -ForegroundColor Green
