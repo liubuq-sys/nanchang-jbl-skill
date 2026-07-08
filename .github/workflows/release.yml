@@ -32,8 +32,6 @@ jobs:
             README.md \
             version.json \
             CHANGELOG.md \
-            install.sh \
-            install.ps1 \
             -x "*.pyc" "__pycache__/*"
 
       - name: Create Release

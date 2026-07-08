@@ -53,7 +53,5 @@ nanchang-jbl/
 │   └── stores.md               # 渠道商门店目录
 ├── version.json
 ├── CHANGELOG.md
-├── install.sh
-├── install.ps1
 └── .gitignore
 ```
